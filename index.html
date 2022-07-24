@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freecodecamp survey form</title>
+  </head>
+  <body>
+    <div id="title-parent">
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </div>
+    <div class="survey-form-background-color-parent">
+      <div id="survey-form-background-color">
+        <form id="survey-form">
+          <label id="name-label">
+            Name
+
+            <input
+              placeholder="Enter your name"
+              required
+              type="text"
+              id="name"
+            />
+          </label>
+
+          <label id="email-label">
+            Email
+
+            <input
+              placeholder="Enter your email"
+              type="email"
+              required
+              id="email"
+            />
+          </label>
+
+          <label id="number-label">
+            Age<span class="clue">(optional)</span>
+
+            <input
+              placeholder="Enter your age"
+              type="number"
+              id="number"
+              min="10"
+              max="99"
+            />
+          </label>
+          <label>
+            <p>Which option best describes your current role?</p>
+            <br />
+            <select id="dropdown">
+              <option disabled selected>Select current role</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <br />
+          <label>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+
+            <br />
+            <input
+              type="radio"
+              id="Definitely"
+              name="freeCodeCamp-friend"
+              value="Definitely"
+            />
+            <label for="Definitely">Definitely</label>
+            <br />
+
+            <input
+              type="radio"
+              id="Maybe"
+              name="freeCodeCamp-friend"
+              value="Maybe"
+            />
+            <label for="Maybe">Maybe</label>
+            <br />
+            <input
+              type="radio"
+              id="Not sure"
+              name="freeCodeCamp-friend"
+              value="Not sure"
+            />
+            <label for="Not sure">Not sure</label>
+            <br />
+          </label>
+          <label>
+            <p id="dropdown2-title">
+              What is your favorite feature of freeCodeCamp?
+            </p>
+
+            <br />
+            <select id="dropdown2">
+              <option disabled selected>Select an option</option>
+              <option>Challenges</option>
+              <option>Projects</option>
+              <option>Community</option>
+              <option>Open Source</option>
+            </select>
+          </label>
+          <br />
+          <div>
+            <p>
+              <span> would you like to see improved?</span>
+              <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <p>
+              <br />
+              <input
+                type="checkbox"
+                id="Front-end-Projects"
+                value="Front-end Projects"
+              />
+              <label for="Front-end-Projects">Front-end Projects</label>
+              <br />
+              <input
+                type="checkbox"
+                id="Back-end-Projects"
+                value="Back-end Projects"
+              />
+              <label for="Back-end-Projects">Back-end Projects</label>
+
+              <br />
+              <input
+                type="checkbox"
+                id="Data-Visualization"
+                value="Data Visualization"
+              />
+              <label for="Data-Visualization">Data Visualization</label>
+              <br />
+              <input type="checkbox" id="Challenges" value="Challenges" />
+              <label for="Challenges">Challenges</label>
+              <br />
+              <input
+                type="checkbox"
+                id="Open-Source-Community"
+                value="Open Source Community"
+              />
+              <label for="Open-Source-Community">Open Source Community </label>
+              <br />
+              <input
+                type="checkbox"
+                id="Gitter-help-rooms"
+                value="Gitter help rooms"
+              />
+              <label for="Gitter-help-rooms">Gitter help rooms </label>
+              <br />
+              <input type="checkbox" id="Videos" value="Videos" />
+              <label for="Videos">Videos</label>
+              <br />
+              <input type="checkbox" id="City-Meetups" value="City Meetups" />
+              <label for="City-Meetups">City Meetups</label>
+              <br />
+              <input type="checkbox" id="Wiki" value="Wiki" />
+              <label for="Wiki">Wiki</label>
+              <br />
+              <input type="checkbox" id="Forum" value="Forum" />
+              <label for="Forum">Forum</label>
+              <br />
+              <input
+                type="checkbox"
+                id="Additional-Courses"
+                value="Additional Courses"
+              />
+              <label for="Additional-Courses">Additional Courses</label>
+              <br />
+            </p>
+          </div>
+
+          <label>
+            <p id="bio-title">Any comments or suggestions?</p>
+            <br />
+            <textarea
+              placeholder="Enter your comment here..."
+              name="bio"
+              id="bio"
+              rows="10"
+              cols="40"
+            ></textarea>
+            <br />
+            <input id="submit" type="Submit" value="Submit" />
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
